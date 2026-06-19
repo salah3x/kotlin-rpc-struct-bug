@@ -1,0 +1,9 @@
+syntax = "proto3";
+package com.example.proto;
+
+import "google/protobuf/struct.proto";
+import "google/protobuf/empty.proto";
+
+service Service {
+  rpc Call(google.protobuf.Struct) returns (google.protobuf.Empty);
+}
